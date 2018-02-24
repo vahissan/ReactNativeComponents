@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import MaterialButton from './components/material-button';
+import MaterialButton from '../../react-native-material-loading-button';
 
 export default class App extends Component {
 
