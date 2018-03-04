@@ -8,9 +8,16 @@ import {
 import MaterialButton from '../../react-native-material-loading-button';
 
 export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: false
+    };
+  }
 
   onBtnPress() {
-    console.log('btn pressed');
+    let newLoading = !this.state.loading;
+    this.setState({loading: newLoading})
   }
 
   render() {
